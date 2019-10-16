@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  font-family: Arial;
+}
+
+textarea {
+  border: none;
+}
+
+input {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+:root {
+  --font-size-sm: 0.5rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.5rem;
+
+  --padding-xs: 0.25rem;
+  --padding-sm: 0.5rem;
+  --padding-md: 1rem;
+  --padding-lg: 1.5rem;
+  --padding-xl: 1.75rem;
+
+  --margin-xs: 0.25rem;
+  --margin-sm: 0.5rem;
+  --margin-md: 1rem;
+  --margin-lg: 1.5rem;
+  --margin-xl: 1.75rem;
+
+  --color-primary: #ff5a5f;
+
+  --color-white: white;
+
+  --color-black: black;
+
+  --color-gray-0: #f9f9f9;
+  --color-gray-1: #eeeeee;
+  --color-gray-2: #ededed;
+  --color-gray-3: #dddddd;
+  --color-gray-4: #cccccc;
+  --color-gray-5: #bbbbbb;
+  --color-gray-6: #aaaaaa;
+  --color-gray-7: #999999;
+  --color-gray-8: #888888;
+  --color-gray-9: #666666;
+  --color-gray-10: #333333;
+
+  --color-green-0: #09ff00;
+  --color-green-1: #07d100;
+
+  --column-wdith: 30rem;
+
+  --font-size-xl: 2rem;
+  --font-size-lg: 1.5rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.5rem;
+}
+
+#app {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--color-gray-1);
+  padding: var(--padding-md);
+}
+
+.header-logo {
+  width: 2rem;
+  margin-right: var(--margin-md);
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-search {
+  flex: 1;
+}
+
+.header-search-input {
+  padding: var(--padding-sm);
+  font-size: 0.8rem;
+  width: 30rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--color-gray-3);
+}
+
+.header-menu {
+  width: 200px;
+  display: flex;
+}
+
+.header-menu-signup {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-menu-login {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* filter */
+
+.filter {
+  display: flex;
+  width: 100%;
+  padding: var(--padding-md);
+  border-bottom: 1px solid var(--color-gray-1);
+}
+
+.filter-item {
+  color: var(--color-gray-7);
+  border-radius: 5px;
+  border: 1px solid var(--color-gray-1);
+  padding: var(--padding-sm);
+  margin-right: var(--margin-md);
+}
+
+.filter-item:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--padding-xl) 0px;
+}
+
+.describe {
+  width: 100%;
+  padding: var(--padding-md);
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-10);
+  margin-bottom: var(--margin-md);
+}
+
+.room-list {
+  width: 100%;
+}
+
+.room-item {
+  display: flex;
+  border: 1px solid var(--color-gray-3);
+  padding: var(--padding-xs);
+  border-radius: 5px;
+  margin-bottom: var(--margin-md);
+}
+
+.room-item-img {
+  width: 360px;
+  height: 252px;
+}
+
+.room-item-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.room-item-desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-lg);
+}
+
+.room-item-head {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  color: var(--color-gray-9);
+  margin-bottom: var(--margin-md);
+}
+
+.room-item-body {
+  flex: 1;
+  font-size: var(--font-size-md);
+  color: var(--color-gray-9);
+}
+
+.room-item-tail {
+  display: flex;
+}
+
+.room-item-start {
+  width: 100px;
+}
+
+.room-item-reservation {
+  text-align: right;
+  flex: 1;
+}
+
+.room-reservation-btn {
+  border-radius: 5px;
+  color: var(--color-white);
+  padding: var(--padding-md);
+  background-color: var(--color-primary);
+}
