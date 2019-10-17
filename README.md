@@ -1,8 +1,8 @@
-<h3 style="text-align:center;color:#ff5a5f;">Airbnb Clone Project</h3>
-<p algin="center">
+<p align="center"><h3>Airbnb Clone Project</h3></p>
+<p align="center">
   <img src="https://kr.object.ncloudstorage.com/boostcamp-chan/airbnb-clone/airbnb-logo.svg" width="300px" height="200"/>
 </p>
-<p style="text-align:center;">
+<p align="center">
   <a href="http://49.236.137.229/">데모 보기</a>
 </p>
 
@@ -33,6 +33,7 @@
 **중요 디렉토리**
 
 - **src**: server 관련 소스
+
 - **controllers**: Request(요청)을 받아 Service에게 비즈니스 로직 처리를 위임하고, 처리의 결과를 Response(응답)하는 역할과 관련된 소스 모음
 - **services**: repository를 사용하여 비즈니스 로직을 처리하고, controller에게 결과를 반환하는 역할과 관련된 소스 모음
 - **repositories**: model(entity)를 사용하여 데이터베이스 작업을 수행하고 결과물을 service에게 반환하는 역할과 관련된 소스 모음
