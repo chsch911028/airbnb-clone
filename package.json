@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev:start": "cross-env NODE_ENV=development nodemon ./dist/server.js",
+    "dev:start": "cross-env NODE_ENV=development pm2 start ./dist/server.js --name 'web'",
     "dev:build": "tsc -w",
     "dev": "concurrently npm:dev:*",
-    "start": "rm -rf dist && tsc && cross-env NODE_ENV=development node dist/server.js",
+    "start": "rm -rf dist && tsc && cross-env NODE_ENV=development pm2 start dist/server.js --name 'web' ",
     "build": "tsc",
-    "prod": "rm -rf dist && tsc && cross-env NODE_ENV=production node dist/server.js",
+    "prod": "rm -rf dist && tsc && cross-env NODE_ENV=production pm2 start dist/server.js --name 'web' ",
     "seed": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed"
   },
   "dependencies": {
