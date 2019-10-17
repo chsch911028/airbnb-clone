@@ -1,5 +1,5 @@
 import { Service } from 'typedi';
-import { RoomRepository } from '../repositories/roomRepository';
+import { RoomRepository } from '../repositories/RoomRepository';
 import { InjectRepository } from 'typeorm-typedi-extensions';
 import { Rooms } from '../models/Rooms';
 
