@@ -8,7 +8,7 @@ import {
   Post,
   Delete
 } from 'routing-controllers';
-import { ReservationService } from '../../services/reservationService';
+import { ReservationService } from '../../services/ReservationService';
 import { Reservations } from '../../models/Reservations';
 
 @JsonController('/reservations')

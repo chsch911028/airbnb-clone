@@ -1,6 +1,6 @@
 import { Rooms } from '../../models/Rooms';
-import * as Faker from 'fakere_modules/faker';
-import { define } from 'typeorm-seedingtypeorm-seeding';
+import * as Faker from 'faker';
+import { define } from 'typeorm-seeding';
 
 const regions = [
   '서울',
