@@ -1,4 +1,4 @@
-<p align="center"><h3>Airbnb Clone Project</h3></p>
+<h3 align="center">Airbnb Clone Project</h3>
 <p align="center">
   <img src="https://kr.object.ncloudstorage.com/boostcamp-chan/airbnb-clone/airbnb-logo.svg" width="300px" height="200"/>
 </p>
