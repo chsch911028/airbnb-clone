@@ -6,6 +6,6 @@ import { Files } from '../../models/Files';
 define(Files, (faker: typeof Faker, settings: any): Files => {
   const id = settings.id;
   const file = new Files();
-  file.url = `https://picsum.photos/${id}/631/360/252`;
+  file.url = `https://picsum.photos/id/${id}/360/252`;
   return file;
 });
