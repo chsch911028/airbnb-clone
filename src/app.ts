@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
-import bodyParser from 'body-parser';
 import path from 'path';
+import cors from 'cors';
 
 /**
  * middlewares
@@ -14,7 +14,7 @@ const app = express();
  *  1. body-parser
  *  2. multer
  */
-
+app.use(cors());
 app.use(morganLogger('dev'));
 app.use(express.static(path.resolve('src', 'public')));
 // app.use(express.static(path.resolve(__dirname, 'public')));
